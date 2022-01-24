@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+	<TargetFramework>net5.0</TargetFramework>
+	<RootNamespace>Blueteam.Components.GreenScreen</RootNamespace>
+
+	<Authors>Andrea Benetton</Authors>
+	<Company>BlueTeam OÜ (14454093)</Company>
+	<Copyright>Copyright 2022 (c) Andrea Benetton. All rights reserved.</Copyright> 
+	<Description>A green screen component for Blazor applications</Description>
+	<IncludeSymbols>true</IncludeSymbols>
+	<OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.13" />
+  </ItemGroup>
+</Project>
